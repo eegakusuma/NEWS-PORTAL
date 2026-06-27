@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Portal</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Daily News Portal</h1>
+        <p>Your Daily Source for Latest News</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Politics</a>
+        <a href="#">Sports</a>
+        <a href="#">Technology</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Breaking News -->
+    <section class="breaking-news">
+        <marquee>
+            🔴 Breaking News: AI is transforming education | Sports Championship concludes today | New movie breaks box office records!
+        </marquee>
+    </section>
+
+    <!-- News Cards -->
+    <div class="container">
+
+        <!-- Technology -->
+        <div class="news-card">
+            <img src="{{ url_for('static', filename='images/news12.jpg') }}" alt="Technology News">
+            <h2>Technology News</h2>
+            <p>
+                Artificial Intelligence is transforming education,
+                healthcare, finance, and businesses worldwide.
+            </p>
+            <button>Read More</button>
+        </div>
+
+        <!-- Sports -->
+        <div class="news-card">
+            <img src="{{ url_for('static', filename='images/news2.jpg') }}" alt="Sports News">
+            <h2>Sports News</h2>
+            <p>
+                The national team secured a thrilling victory in the
+                championship after an exciting final match.
+            </p>
+            <button>Read More</button>
+        </div>
+
+        <!-- Entertainment -->
+        <div class="news-card">
+            <img src= "{{ url_for('static', filename='images/news3.jpg') }}"alt="Entertainment News">
+            <h2>Entertainment News</h2>
+            <p>
+                The latest blockbuster movie has broken several box office
+                records during its opening weekend.
+            </p>
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer> 
+        <p>&copy; 2026 Daily News Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
